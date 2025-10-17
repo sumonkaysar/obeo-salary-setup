@@ -24,7 +24,7 @@ const ShowEntries = <TData,>({ table }: IProps<TData>) => {
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent>
-          {[2, 10, 20, 30, 50, 100].map((pageSize) => (
+          {[10, 20, 30, 50, 100].map((pageSize) => (
             <DropdownMenuItem
               key={pageSize}
               onClick={() => table.setPageSize(Number(pageSize))}
