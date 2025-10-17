@@ -59,7 +59,7 @@ export const salarySetupSlice = createSlice({
     },
     deleteSalarySetup: (state) => {
       state.salarySetup = state.salarySetup.filter(
-        (candidate) => candidate._id !== state.salarySetupDeleteId
+        (s) => s._id !== state.salarySetupDeleteId
       );
       toast.success("Salary setup deleted succesfully");
       state.salarySetupDeleteId = "";
