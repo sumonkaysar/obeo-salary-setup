@@ -14,7 +14,7 @@ const initialState: ISalarySetupState = {
   salarySetup: salarySetupData,
   tableState: {
     globalFilter: "",
-    sorting: [{ desc: true, id: "date" }],
+    sorting: [{ desc: false, id: "sl" }],
     rowSelection: {},
     pagination: {
       pageIndex: 0,
